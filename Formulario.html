@@ -1,0 +1,132 @@
+<html>
+<head>
+    
+  <title>Meu Formulário Personalizado</title>
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="css/estiloie.css">
+  <![endif]-->
+    <style>
+        body{
+            background-color: bisque;
+            
+        }
+        form{
+            background-color: beige;
+            font-family:'Courier New', Courier, monospace;
+    
+        }
+
+        .container {
+            
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+        }
+
+        label {
+            font-weight: bold;
+            
+        }
+
+        input{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          
+        }      
+        
+        
+    </style>
+</head>
+<body>
+<div class="container">
+  <form id="formulario" autocomplete="off">
+    <fieldset>
+      <legend>Formulário</legend>
+      <label>Nome completo:</label><input class="campo_nome" type="text" placeholder="digite aqui"><br>
+      <label>idade:</label><input class="campo_email" type="number" placeholder="digite aqui"><br>
+      <label for="sexo">sexo:</label>
+      <select name="sexo" id="sexo" required>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outros</option>
+      </select><br>
+      <label>Nascimento:</label> <input type="date" placeholder="digite aqui"><br>
+      <label>Endereço:</label> <input type="text" placeholder="digite aqui"><br><br>
+      <label>Telefone:</label> <input type="tel" placeholder="digite aqui"><br>
+      <label>Cidade:</label> <input type="text" placeholder="digite aqui"><br>
+      <label>Estado:</label>  <select name="sexo" id="sexo" required>
+        <option value="AC">AC</option>
+        <option value="AL">AL</option>
+        <option value="AP">AP</option>
+        <option value="AM">AM</option>
+        <option value="BA">BA</option>
+        <option value="CE">CE</option>
+        <option value="ES">ES</option>
+        <option value="GO">GO</option>
+        <option value="MA">MA</option>
+        <option value="MT">MT</option>
+        <option value="MS">MS</option>
+        <option value="MG">MG</option>
+        <option value="PA">PA</option>
+        <option value="PB">PB</option>
+        <option value="PR">PR</option>
+        <option value="PE">PE</option>
+        <option value="PI">PI</option>
+        <option value="RJ">RJ</option>
+        <option value="RN">RN</option>
+        <option value="RS">RS</option>
+        <option value="RO">RO</option>
+        <option value="RR">RR</option>
+        <option value="SC">SC</option>
+        <option value="SP">SP</option>
+        <option value="SE">SE</option>
+        <option value="TO">TO</option>
+        <option value="DF">DF</option>
+
+        
+
+      </select><br>
+      <label>E-mail:</label> <input type="email" placeholder="digite aqui"><br>
+      <label>Cargo</label> <input type="text" placeholder="digite aqui"><br><br>
+      <label>PESSOA COM DEFICIENCIA (PCD):</label><input type="radio" id="pcd_sim" name="pcd" value="sim" required>
+      <label for="pcd_sim">sim</label>
+      <input type="radio" id="pcd_nao" name="pcd" value="nao" required>
+      <label for="pcd_nao">não</label><br><br><br>
+      
+      <label>EMPREGADO:</label><input type="radio" id="empregado_sim" name="pcd" value="sim" required>
+      <label for="pcd_sim">sim</label>
+      <input type="radio" id="empregado_nao" name="pcd" value="nao" required>
+      <label for="pcd_nao">não</label><br><br><br>
+      
+      <label>SETOR:</label><br>
+     <input type="checkbox"> <label>Compra</label><br>
+      <input type="checkbox"> <label>Venda</label><br>
+      <input type="checkbox"> <label>financeiro</label><br>
+      <input type="checkbox"> <label>TI</label><br>
+      <input type="checkbox"> <label>RH</label><br>
+      <input type="checkbox"> <label>Contabilidade</label><br><br>
+
+
+      <label for=""></label><input class= "btn_submit" type="submit" value="Enviar">
+
+      
+    </fieldset>
+
+  </form>
+</div>
+</body>
+</html>
