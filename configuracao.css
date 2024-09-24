@@ -1,0 +1,12 @@
+.piscar {
+    animation: piscar 4s infinite;
+}
+
+@keyframes piscar {
+    0%, 250% {
+        opacity: 1; 
+    }
+    50% {
+        opacity: 0; 
+    }
+}
