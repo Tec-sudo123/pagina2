@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>jQuery</title>
+        <style>
+            #janela{position:absolute; width:300px; height:300px; background-color: #069;}
+        </style>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script>
+        //Direita//
+        function moverObjeto() {
+            $("#janela").animate({left:300},1000)
+            
+        }
+
+        $(function(e) {
+            $("#direita").click(moverObjeto);
+
+                    })
+        //esquerda//
+
+        function moverObjeto2() {
+            $("#janela").animate({left:-300},1000)
+            
+        }
+
+        $(function(e) {
+            $("#esquerda").click(moverObjeto2);
+
+                    })
+
+        //baixo//
+
+        function moverObjeto3() {
+            $("#janela").animate({top:300},1000)
+            
+        }
+
+        $(function(e) {
+            $("#baixo").click(moverObjeto3);
+
+                    })
+
+        //cima//
+
+        function moverObjeto4() {
+            $("#janela").animate({top:-300},1000)
+            
+        }
+
+        $(function(e) {
+            $("#cima").click(moverObjeto4);
+
+                    })
+        
+        </script>
+    </head>
+    <body>
+        <input type="button" id="direita" value="Mover para direita" />
+        <div id="janela"></div>
+        
+        <input type="button" id="esquerda" value="Mover para esquerda" />
+        
+        <input type="button" id="baixo" value="Mover para baixo" />
+
+        <input type="button" id="cima" value="Mover para cima" />
+    </body>
+    
+    </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Slide Up e Slide Down com jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <style>
+        #janela {
+            width: 300px;
+            padding: 1000px;
+            border: 1px solid #a31515;
+            margin-top: 500px;
+            background-color: rgb(22, 160, 79);
+        }
+    </style>
+</head>
+<body>
+
+    <button id="toggleButton">Ir para cima</button>
+    <button id="toggleButton2">Ir para baixo</button>
+    <div id="janela" style="display:;">
+        Este é o conteúdo que será exibido e ocultado com animação.
+    </div>
+
+    <script>
+
+    
+        $("#janela").ready(function(){
+            $("#toggleButton").click(function(){
+                $("#janela").slideUp('fast');
+            });
+        });
+      
+        $("#janela").ready(function(){
+            $("#toggleButton2").click(function(){
+                $("#janela").slideDown('fast');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
